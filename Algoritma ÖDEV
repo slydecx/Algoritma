@@ -1,0 +1,154 @@
+ALGORİTMA
+Algoritma Nedir?
+
+Algoritma, hayatımızdaki sorunları çözmek için adım adım takip ettiğimiz bir rehber gibidir. 
+Günlük aktivitelerimizde ve kararlarımızda, belirli adımları izleyerek bir sonuca ulaşmamızı sağlar. 
+Algoritmalar, sadece bilgisayar dünyasında değil, günlük yaşamımızda da etkili bir rol oynar. 
+Algoritma gereklidir çünkü işlerimizi kolaylaştırır bilgisayarda yapmamız gereken görevleri daha basit ve izlenilebilir bir hale getirir.
+Avantajları ise:
+Algoritmalar, adım adım izlenmesi gereken bir plan sunduğu için karmaşık sorunları daha sistematik bir şekilde çözmeye yardımcı olur.
+Belirli bir problemi çözmek için tekrar tekrar kullanılabilir. 
+Görevleri daha hızlı ve verimli bir şekilde tamamlamaya yardımcı olur.
+
+Program yazılmadan önce algoritması mı hazırlanmalı yoksa akış diyagramı mı çizilmelidir?
+
+Program geliştirmenin önemli adımlarıdır. Ancak akış diyagramı görsel bir temsil sunar.
+Genellikle algoritma belirlendikten sonra akış diyagramı çizilir.
+Bence bu projeden projeye değişiklik gösterebilir.
+
+Algoritma hazırlarken dikkat edilmesi gereken hususlar
+
+Bence ilk başta algoritmanın adımları açık ve anlaşılır olmalı.
+Hangi veri türlerinin kullanılacağı belirtilmeli.
+Gereksiz adım ve tekrarlar olmamalı.
+Algoritmanın ilerleme durumları ve bitiş koşulları belirtilmeli.
+Algoritma, tasarım aşamasında test edilebilir olmalı.
+
+Değişken Nedir?
+
+Belirli bir değeri temsil eden ve algoritmanın çalışması sırasında değişiklik gösteren sembol.
+
+Değişkenlere ihtiyaç duyarız çünkü:
+Algoritmaların temelini oluşturur ve bellek yönetimine yardımcı olur.
+Genel kullanım ve tekrar kullanılabilirlik açısından önemlidir.
+Geçici bilgileri depolamak için kullanılır.
+
+Sayaçlar, Nerelerde ve Niçin Kullanılmaktadır?
+
+Sayaçlar, algoritmada tekrarlayan işlemleri saymak, takip etmek veya kontrol etmek için kullanılan değişkenlerdir.
+Bazı görevlerin belirlenen sayılarda yaptırlmasında da kullanılır.
+
+SORU 1
+
+1. Başla
+2. T=0
+3. S=0
+4. Eğer S>10 ise Git 8
+5. T=T+2*S
+6. S=S+2
+7. Git 4
+8. Yaz T
+9. Dur
+ 
+T = 0, S = 0
+T = 0 + 2 * 0 = 0
+S = 0 + 2 = 2
+T = 0 + 2 * 2 = 4
+S = 2 + 2 = 4
+T = 4 + 2 * 4 = 12
+S = 4 + 2 = 6
+T = 12 + 2 * 6 = 24
+S = 6 + 2 = 8
+T = 24 + 2 * 8 = 40
+S = 8 + 2 = 10   s değeri 10 olduğı için döngü biter T=40 olur.
+
+
+SORU 2
+
+1. Başla                                       
+2. F=1
+3. S=20
+4. Eğer S<1 ise Git 9
+5. S=S-3
+6. F=F+S
+7. F=F+2
+8. Git 4
+9. Yaz F
+10. Dur
+
+S=20 F=20   
+S=17 F=36   S = 14, F = 20 + 14 + 2 = 36
+S=14 F=49   S = 11, F = 36 + 11 + 2 = 49
+S=11 F=59   S = 8, F = 49 + 8 + 2 = 59
+S=8 F=66      S = 5, F = 59 + 5 + 2 = 66
+S=5 F=70      S = 2, F = 66 + 2 + 2 = 70
+S=2 F=71      S = -1, F = 70 + (-1) + 2 = 71
+
+Olay şu şekilde: 
+S değerini 3 azalt.
+F değerine S'yi ekle.
+F değerine 2 ekle.
+Etiket 4'e git ve döngünün başına dön.
+
+
+Girilen üç sayıdan en büyüğünü bulan programın algoritmasını yazınız
+
+1. Başla
+2. H, S, N  üç sayıyı giriş olarak al
+3. EnBüyük = H ise git 6
+4. Eğer S > H veya N ise En büyük = S ise git 6
+5. Eğer N > H veya S ise En büyük = N ise git 6
+6. Yaz En büyük sayı
+7. Dur
+
+
+Girilen üç sayıyı küçükten büyüğe doğru sıralayan programın algoritmasını hazırlayınız. 
+
+1. Başla
+2. H S N gir
+3. H<S ve H<N ise git 6
+4. S<H ve S<N ise git 8
+5. N<H ve N<S ise git 10
+6. S<N ise yaz H<S<N git 12
+7. yaz H<N<S  git 12
+8. H<N ise yaz S<H<N git 12
+9. yaz S<N<H git 12
+10. A<B ise yaz N<H<S git 12
+11. yaz N<S<H
+12. Dur
+
+1-99 arasındaki tek ve çift sayıların toplamları ile çarpımlarını ayrı ayrı hesaplayan programın algoritmasını hazırlayınız.
+
+1. Başla
+2. TekToplam = 0
+3. TekCarpim = 1
+4. ÇiftToplam = 0
+5. ÇiftCarpim = 1
+6. i = 1
+7. Döngü başlat:
+ 8. Eğer i tek ise:
+ 9.   TekToplam = TekToplam + i
+10.  TekCarpim = TekCarpim * i
+11. Eğer i çift ise:
+12.  ÇiftToplam = ÇiftToplam + i
+13.  ÇiftCarpim = ÇiftCarpim * i
+14. i'yi 1 artır
+15. Eğer i <= 99 ise git 7 
+16. Yaz Tek sayıların toplamı: TekToplam
+17. Yaz Tek sayıların çarpımı: TekCarpim
+18. Yaz Çift sayıların toplamı: ÇiftToplam
+19. Yaz Çift sayıların çarpımı: ÇiftCarpim
+20. Dur
+
+
+
+
+
+
+
+
+
+
+
+
+
